@@ -12,7 +12,7 @@ CFLAGS += -s MODULARIZE=1
 CFLAGS += -s EXPORT_NAME='hnswlib'
 CFLAGS += -s ASSERTIONS=1
 CFLAGS += -s DEMANGLE_SUPPORT=1
-CFLAGS += -s SINGLE_FILE
+# CFLAGS += -s SINGLE_FILE removed because it was causing issues with the wasm module
 
 CFLAGS += --bind
 CFLAGS += -s ENVIRONMENT=web
